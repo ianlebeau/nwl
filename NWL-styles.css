@@ -9,22 +9,41 @@
 
 html body {
   font-family: "Roboto", sans-serif; }
+  html body a {
+    color: #435A9C; }
   html body h1, html body h2, html body h3, html body .h1, html body .h2, html body .h3 {
-    font-family: "Roboto Condensed", "Roboto", sans-serif; }
-  html body h4, html body h5, html body h6, html body .h4, html body .h5, html body .h6 {
-    font-family: "Roboto", sans-serif; }
-  html body .btn {
+    font-family: "Roboto Condensed", "Roboto", sans-serif !important; }
+  html body h4, html body h5, html body h6, html body .h4, html body .h5, html body .h6, html body .box-title, html body fieldset.fieldset .legend {
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: 0; }
+  html body .btn, html body button, html body .btn-wishlist {
     box-shadow: none;
-    font-size: 16px;
+    font-size: 14px;
     text-shadow: none;
     padding: 8px 20px;
-    text-transform: none; }
+    text-transform: none !important; }
+    html body .btn:hover, html body .btn:focus, html body .btn:active, html body button:hover, html body button:focus, html body button:active, html body .btn-wishlist:hover, html body .btn-wishlist:focus, html body .btn-wishlist:active {
+      background: #FE4433;
+      color: #fff; }
   html body .btn-primary {
     background: #435A9C;
+    box-shadow: none;
     color: #fff; }
     html body .btn-primary:hover, html body .btn-primary:focus, html body .btn-primary:active {
       background: #FE4433;
       color: #fff; }
+  html body .btn-cart {
+    background: #435A9C;
+    font-size: 16px; }
+    html body .btn-cart:hover, html body .btn-cart:focus, html body .btn-cart:active {
+      background: #FE4433;
+      color: #fff; }
+  html body .bundle-options-container .product-add-form .product-addto-links a, html body .product-info-main .product-social-links a {
+    box-shadow: none;
+    background: #eee; }
+    html body .bundle-options-container .product-add-form .product-addto-links a:hover, html body .bundle-options-container .product-add-form .product-addto-links a:focus, html body .product-info-main .product-social-links a:hover, html body .product-info-main .product-social-links a:focus {
+      color: #fff;
+      background: #FE4433; }
   html body input[type="text"], html body input[type="email"], html body input[type="password"], html body .form-control:not(.btn) {
     font-size: 16px;
     border: 1px solid #ccc; }
@@ -40,6 +59,8 @@ html body {
       text-align: center; }
   html body section.shadow-box {
     margin-bottom: 4em; }
+  html body .back-in-stock, html body .label-sale, html body .label-new {
+    background: #40c242; }
   html body .space-0 {
     margin-bottom: 0 !important; }
   html body .row-eq-height {
@@ -49,6 +70,9 @@ html body {
     display: flex; }
   html body .content-wrapper {
     margin-top: 4rem; }
+  html body .page-title {
+    margin-bottom: 15px !important;
+    color: #333 !important; }
   html body .page-header .header-links {
     list-style: none;
     font-size: 0;
@@ -418,5 +442,50 @@ html body {
       html body .image-block-text {
         padding: 5px;
         font-size: 15px; } }
+  html body .product .buttons-block .button-wrapper {
+    display: block;
+    width: 100%; }
+    html body .product .buttons-block .button-wrapper form {
+      width: 100%; }
+    html body .product .buttons-block .button-wrapper .btn {
+      width: 100%; }
+  html body .products-list .price-block.listing-price .price, html body .products-grid .price-block.listing-price .price {
+    color: #FE4433; }
+  html body .sidebar .block.newsletter .btn:before {
+    background: transparent; }
+  html body .sidebar .block.filter ol li a {
+    color: #435A9C; }
+    html body .sidebar .block.filter ol li a:before {
+      display: none; }
+  html body .sidebar .block .filter-options-title, html body .sidebar .block .block-title {
+    color: #444;
+    padding-bottom: 10px;
+    font-size: 12px; }
+    html body .sidebar .block .filter-options-title:after, html body .sidebar .block .block-title:after {
+      color: #666; }
+  html body #amasty_locator_filter {
+    margin-bottom: 4rem; }
+  html body .contact-info > p {
+    margin-bottom: 2rem; }
+  html body .contact-info .contact-info-number {
+    color: #FE4433;
+    font-weight: bold;
+    font-size: 1.5rem; }
+  html body .block-contact-info .block-title {
+    display: none; }
+  html body .box {
+    margin-bottom: 3rem; }
+    html body .box .box-title {
+      margin-bottom: 1rem;
+      font-weight: bold; }
+  html body fieldset.fieldset .legend {
+    font-weight: bold;
+    color: #222; }
+  html body .bottom-block {
+    margin-bottom: 2rem; }
+  html body #product-review-table {
+    padding: 15px; }
+  html body .tab-content {
+    padding: 15px; }
 
 /*# sourceMappingURL=NWL-styles.css.map */

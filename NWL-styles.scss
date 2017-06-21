@@ -19,25 +19,36 @@ $green: #40c242;
 html body {
 	font-family: $roboto;
 
+	a {
+		color: $blue;
+	}
+
 h1,h2,h3,.h1,.h2,.h3 {
-	font-family: $roboto-condensed;
+	font-family: $roboto-condensed !important;
 }
 
-h4,h5,h6,.h4,.h5,.h6 {
-	font-family: $roboto;
+h4,h5,h6,.h4,.h5,.h6, .box-title, fieldset.fieldset .legend {
+	font-family: $roboto !important;
+	letter-spacing: 0;
 }
 	
 
 // Buttons
-.btn {
+.btn, button, .btn-wishlist {
 	box-shadow: none;
-	font-size: 16px;
+	font-size: 14px;
 	text-shadow: none;
 	padding: 8px 20px;
-	text-transform: none;
+	text-transform: none !important;
+
+	&:hover, &:focus, &:active {
+		background: $red;
+		color: #fff;
+	}
 }
 .btn-primary {
 	background: $blue;
+	box-shadow: none;
 	color: #fff;
 
 	&:hover, &:focus, &:active {
@@ -45,7 +56,24 @@ h4,h5,h6,.h4,.h5,.h6 {
 		color: #fff;
 	}
 }
+.btn-cart {
+	background: $blue;
+	font-size: 16px; 
 
+	&:hover, &:focus, &:active {
+		background: $red;
+		color: #fff;
+	}
+}
+.bundle-options-container .product-add-form .product-addto-links a, .product-info-main .product-social-links a {
+	box-shadow: none;
+	background: #eee;
+
+	&:hover, &:focus {
+		color: #fff;
+		background: $red;
+	}
+}
 
 // Forms
 input[type="text"], input[type="email"], input[type="password"], .form-control:not(.btn) {
@@ -60,7 +88,7 @@ input[type="text"], input[type="email"], input[type="password"], .form-control:n
 	background: #F0F0F0;
 	border-radius: 5px;
 	box-shadow: -5px 5px 0 #E3E3E3;
-	margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem; 
 
 	.form-control:not(.btn) {
 		background: #fff;
@@ -74,6 +102,9 @@ input[type="text"], input[type="email"], input[type="password"], .form-control:n
 }
 section.shadow-box {
 	margin-bottom: 4em;
+}
+.back-in-stock, .label-sale, .label-new {
+	background: $green;
 }
 
 // Spacing
@@ -89,6 +120,10 @@ section.shadow-box {
 // Content
 .content-wrapper {
 	margin-top: 4rem;
+}
+.page-title {
+	margin-bottom: 15px !important;
+	color: #333 !important;
 }
 
 // Header
@@ -626,6 +661,111 @@ section.shadow-box {
 	}
 }
 
+
+// Products
+.product {
+	.buttons-block {
+		.button-wrapper {
+			display: block;
+			width: 100%;
+
+			form {
+				width: 100%;
+			}
+
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+}
+.products-list, .products-grid {
+	.price-block {
+		&.listing-price {
+			.price {
+				color: $red;
+			}
+		}
+	}
+}
+
+// Sidebar
+.sidebar {
+	.block {
+		&.newsletter {
+			.btn {
+				&:before {
+					background: transparent;
+				}
+			}
+		}
+		&.filter {
+			ol {
+				li {
+					a {
+						color: $blue;
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.filter-options-title, .block-title {
+			color: #444;
+			padding-bottom: 10px;
+			font-size: 12px;
+
+			&:after {
+				color: #666;
+			}
+		}
+	}
+}
+
+#amasty_locator_filter {
+	margin-bottom: 4rem;
+}
+
+
+// Contact Us
+.contact-info {
+	>p {
+		margin-bottom: 2rem;
+	}
+	.contact-info-number {
+		color: $red;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+}
+.block-contact-info {
+	.block-title {
+		display: none;
+	}
+}
+.box {
+	margin-bottom: 3rem;
+
+	.box-title {
+		margin-bottom: 1rem;
+		font-weight: bold;
+	}
+}
+fieldset.fieldset .legend {
+	font-weight: bold;
+	color: #222;
+}
+.bottom-block {
+	margin-bottom: 2rem;
+}
+#product-review-table {
+	padding: 15px;
+}
+.tab-content {
+	padding: 15px;
+}
 
 
 } // END BODY TAG
