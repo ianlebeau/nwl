@@ -11,7 +11,7 @@ html body {
   font-family: "Roboto", sans-serif; }
   html body a {
     color: #435A9C; }
-  html body h1, html body h2, html body h3, html body .h1, html body .h2, html body .h3 {
+  html body h1, html body h2, html body h3, html body .h1, html body .h2, html body .h3, html body .page-title {
     font-family: "Roboto Condensed", "Roboto", sans-serif !important; }
   html body h4, html body h5, html body h6, html body .h4, html body .h5, html body .h6, html body .box-title, html body fieldset.fieldset .legend {
     font-family: "Roboto", sans-serif !important;
@@ -48,7 +48,7 @@ html body {
     font-size: 16px;
     border: 1px solid #ccc; }
   html body .shadow-box {
-    padding: 0.8rem;
+    padding: 1.2rem;
     background: #F0F0F0;
     border-radius: 5px;
     box-shadow: -5px 5px 0 #E3E3E3;
@@ -69,9 +69,9 @@ html body {
     display: -ms-flexbox;
     display: flex; }
   html body .content-wrapper {
-    margin-top: 4rem; }
+    margin-top: 2.5rem; }
   html body .page-title {
-    margin-bottom: 15px !important;
+    margin-bottom: 0 !important;
     color: #333 !important; }
   html body .page-header .header-links {
     list-style: none;
@@ -487,5 +487,7 @@ html body {
     padding: 15px; }
   html body .tab-content {
     padding: 15px; }
+  html body .banner-full-image {
+    margin-top: -2.5rem; }
 
 /*# sourceMappingURL=NWL-styles.css.map */

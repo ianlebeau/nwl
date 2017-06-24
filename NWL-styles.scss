@@ -23,7 +23,7 @@ html body {
 		color: $blue;
 	}
 
-h1,h2,h3,.h1,.h2,.h3 {
+h1,h2,h3,.h1,.h2,.h3, .page-title {
 	font-family: $roboto-condensed !important;
 }
 
@@ -84,7 +84,7 @@ input[type="text"], input[type="email"], input[type="password"], .form-control:n
 
 // Utilities
 .shadow-box {
-	padding: 0.8rem;
+	padding: 1.2rem;
 	background: #F0F0F0;
 	border-radius: 5px;
 	box-shadow: -5px 5px 0 #E3E3E3;
@@ -119,10 +119,10 @@ section.shadow-box {
 
 // Content
 .content-wrapper {
-	margin-top: 4rem;
+	margin-top: 2.5rem;
 }
 .page-title {
-	margin-bottom: 15px !important;
+	margin-bottom: 0 !important;
 	color: #333 !important;
 }
 
@@ -767,5 +767,9 @@ fieldset.fieldset .legend {
 	padding: 15px;
 }
 
+
+.banner-full-image {
+	margin-top: -2.5rem;
+}
 
 } // END BODY TAG
